@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Electron App</title>
+
+  </head>
+  <body>
+    <main class="app-shell">
+      <aside class="side-pane" aria-label="Primary navigation">
+        <div class="nav-container">
+          <button class="nav-button nav-button--active" data-screen="main-screen" type="button">
+            <span class="nav-icon">🏠</span>
+            <span class="nav-label">Main</span>
+          </button>
+          <button class="nav-button" data-screen="about-screen" type="button">
+            <span class="nav-icon">ℹ️</span>
+            <span class="nav-label">About</span>
+          </button>
+        </div>
+      </aside>
+
+      <section class="content-area">
+        <section id="main-screen" class="screen screen--active">
+          <div class="screen-header">
+            <h1>Welcome</h1>
+            <p class="screen-description">You're on the main screen</p>
+          </div>
+        </section>
+
+        <section id="about-screen" class="screen" aria-hidden="true">
+          <div class="screen-header">
+            <h1>About</h1>
+            <p class="screen-description">Learn more about this application</p>
+          </div>
+        </section>
+      </section>
+    </main>
+  </body>
+</html>
